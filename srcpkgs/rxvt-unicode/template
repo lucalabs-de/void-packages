@@ -68,11 +68,6 @@ pre_install() {
 	mkdir -p $TERMINFO
 }
 
-post_install() {
-	vinstall ${FILESDIR}/${pkgname}.desktop 644 usr/share/applications
-	vinstall ${FILESDIR}/${pkgname}.png 644 usr/share/pixmaps
-}
-
 rxvt-unicode-terminfo_package() {
 	short_desc+=" - terminfo data"
 	pkg_install() {
